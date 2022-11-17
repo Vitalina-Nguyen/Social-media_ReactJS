@@ -1,0 +1,61 @@
+.navbar {
+
+  background-color: darkslategray;
+  grid-area: n;
+}
+
+
+/*Navbar references*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555;
+  color: rgba(255, 255, 255, .6);
+}
+
+.active {
+  color: white !important; 
+}
+
+
+/*Friends*/
+
+.friendsBox {
+  margin-top: 25px;
+}
+
+.friendsLine {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
+.friendBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*
+.friendBox :hover { 
+  background-color: #555;
+}
+*/
+
+.friendBox img {
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}

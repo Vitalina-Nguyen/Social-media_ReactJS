@@ -1,0 +1,44 @@
+/*User's names*/
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+
+}
+
+.dialog {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 15px;
+}
+
+.dialog:hover {
+    background-color: rgb(134, 134, 134);
+}
+
+.dialog img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dialog a{
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*Massages*/
+
+.massages {
+    padding: 10px;
+}
+
+.massages .massage {
+    
+}

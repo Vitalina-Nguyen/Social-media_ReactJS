@@ -6,7 +6,10 @@ import s from "./../Navbar.module.css";
 function Friends(props) {
 
   let friendsElements = props.friends
-    .map( (el) => <Friend name = {el.name} id = {el.id} photo = {el.photo} />)
+    .map( (el) => <Friend name = {el.name} 
+                          key = {el.id} 
+                          id = {el.id} 
+                          photo = {el.photo} />)
 
   return (
     <div className={s.friendsBox}>

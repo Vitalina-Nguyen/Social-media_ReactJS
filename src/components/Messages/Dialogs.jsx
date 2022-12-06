@@ -9,11 +9,11 @@ function Dialogs (props) {
 
     // Mapping of DialogsItems
     let dialogsElements = props.dialogs
-    .map( (el) => <Dialog name = {el.name} id = {el.id} photo = {el.photo} />)
+    .map( (el) => <Dialog name = {el.name} key = {el.id} id = {el.id} photo = {el.photo} />)
 
     // Mapping of MassageData
     let massagesElements = props.massages
-    .map( m => <Message message = {m.massage}/>)
+    .map( m => <Message message = {m.massage} key = {m.id}/>)
 
     let addMessage = () => {
         props.sendNewMessageCreator();

@@ -10,6 +10,7 @@ function MyPosts(props) {
   //Mapping
   let postsElements = props.posts.map ( m => <Post 
                       post = {m.post} 
+                      key = {m.id}
                       likesCount = {m.likesCount} />)
 
   let newPostElement = React.createRef();

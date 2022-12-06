@@ -8,8 +8,8 @@ let store = {
 
         profilePage: {
             posts: [
-                {id: 1, post: 'Hello! This is Anna.', likesCount: 12},
-                {id: 2, post: 'I am an artist.', likesCount: 13}
+                {id: '1', post: 'Hello! This is Anna.', likesCount: 12},
+                {id: '2', post: 'I am an artist.', likesCount: 13}
             ],
             newPostText: ''
         },

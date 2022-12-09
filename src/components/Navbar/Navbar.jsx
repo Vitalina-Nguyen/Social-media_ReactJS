@@ -27,6 +27,9 @@ function Navbar(props) {
             <NavLink to="/settings" className={addActive()}> Settings </NavLink>
         </li>
         <li>
+            <NavLink to="/searchusers" className={addActive()}> Find Users </NavLink>
+        </li>
+        <li>
             <Friends friends = {props.state.friends}/>
         </li>
       </ul>

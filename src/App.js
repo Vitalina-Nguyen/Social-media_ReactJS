@@ -10,27 +10,20 @@ import SearchUserContainer from "./components/SearchUser/SearchUserContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchUser from "./components/SearchUser/SearchUser";
 
-
-
 function App(props) {
-  
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar state = {props.state.sidebar}/>
+        <Navbar state={props.state.sidebar} />
         <div className="app-wrapper-content">
           <Routes>
             <Route path="/profile/*" element={<Profile />} />
-            <Route path="/dialogs/*" element={<DialogsContainer/>} />
+            <Route path="/dialogs/*" element={<DialogsContainer />} />
             <Route path="/news/*" element={<News />} />
             <Route path="/music/*" element={<Music />} />
             <Route path="/settings/*" element={<Settings />} />
-<<<<<<< HEAD
-            <Route path="/searchusers/*" element={<SearchUser />}/>
-=======
-            <Route path="/searchusers/*" element={<SearchUserContainer />}/>
->>>>>>> 93b9f429aab8d8fb52814405ff70534ea6cb2818
+            <Route path="/searchusers/*" element={<SearchUser />} />
           </Routes>
         </div>
       </div>
